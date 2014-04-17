@@ -1,0 +1,33 @@
+
+<html>
+<head>
+  <title>Mt. Olive Early Learning Center </title>
+  <style>
+      header
+      {
+          text-align:center;
+          float:left;
+          width:100%;
+          background: navajowhite;
+          font-style:italic;
+
+      }
+
+
+      body
+      {
+          background-color: mediumspringgreen;
+      }
+  </style>
+
+
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

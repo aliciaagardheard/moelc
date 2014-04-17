@@ -1,0 +1,17 @@
+.blockquote {
+  width: 25%;
+  float: right;
+  margin-top:20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #0fddaf;
+  background: rgb(15, 221, 175); /* Fall-back for browsers that don't support rgba */
+  background: rgba(15, 221, 175, .15);
+  font-family: fanwood_italic-webfont;
+  text-align: center;
+}
+
+
+// Place all the styles related to the Contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/

@@ -1,0 +1,74 @@
+<header>
+  <%= image_tag('bear.jpeg', :size => "50x50")%> <h2> Mt Olive Early Learning Center </h2> <%= image_tag('bear.jpeg', :size => "50x50") %>
+  <h3>Where love abides and joy goes home!</h3>
+  <div id="nav">
+    <ul>
+      <li><%= link_to "Home", :action  => "home", :controller => "home"%></li>
+      <li><%= link_to "About", :action  => "about", :controller => "about"%></li>
+      <li><%= link_to "Contact", :action  => "contact", :controller => "contact"%></li>
+    </ul>
+  </div>
+</header>
+
+<div id="body">
+
+<div id="place">
+    <address>
+      <p> We are located at: </p>
+      <p> 3366 Mt. Olive Rd </p>
+      <p> East Point GA 30344 </p>
+     </address>
+</div>
+
+
+
+<form>
+<div class="col-md-3">
+  <form method="post" action="/upload/uploadFile" enctype="multipart/form-data">
+
+    <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
+
+    <div class="form-group">
+      <input type="text" class="form-control" name="email" placeholder="Email" required />
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" name="firstName" placeholder="First Name" required />
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" name="lastName" placeholder="Last Name" required />
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Address" id="address" name="address" maxlength="120" />
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="City" id="6898017" name="6898017" maxlength="100" />
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="State" id="6898018" name="6898018"  maxlength="100" />
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Zip Code" id="screenerZipCode" name="6898019" maxlength="5" />
+    </div>
+
+    <div class="form-group">
+      <label>Enter comments here. </label>
+
+    </div>
+
+    <%= text_area "post", "body", "cols" => 10, "rows" => 10 %>
+
+    <div class="form-group">
+      <input name="upload" type="submit" class="box" id="upload" value="Submit">
+    </div>
+
+  </form>
+</div>
+</form>
+
+</div>
