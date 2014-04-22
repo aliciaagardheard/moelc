@@ -59,6 +59,9 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mail_form (1.5.0)
+      actionmailer (>= 3.2, < 5)
+      activemodel (>= 3.2, < 5)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.9.2)
@@ -92,6 +95,9 @@ GEM
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
+    simple_form (3.0.2)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -136,9 +142,11 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   less-rails
+  mail_form
   rails (= 4.0.4)
   sass-rails (~> 4.0.2)
   sdoc
+  simple_form
   sprockets (= 2.11.0)
   sqlite3
   tabulous

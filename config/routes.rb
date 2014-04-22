@@ -1,7 +1,12 @@
 Moelc::Application.routes.draw do
+  get "submit/submit"
   get "contact/contact", :as => 'Contact'
   get "about/about", :as => 'About'
   get "home/home"
+
+  # match '/contact', to: 'contact#new',   via: 'get'
+  # resources "contact", only:[:new, :create]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
